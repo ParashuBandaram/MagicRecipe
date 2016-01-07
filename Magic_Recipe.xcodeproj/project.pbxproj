@@ -14,6 +14,12 @@
 		86A08C001C3D1823001D5184 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A08BFF1C3D1823001D5184 /* Images.xcassets */; };
 		86A08C031C3D1823001D5184 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86A08C011C3D1823001D5184 /* LaunchScreen.xib */; };
 		86A08C0F1C3D1823001D5184 /* Magic_RecipeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A08C0E1C3D1823001D5184 /* Magic_RecipeTests.m */; };
+		86A08C221C3D1DB5001D5184 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A08C1E1C3D1DB5001D5184 /* Reachability.m */; };
+		86A08C231C3D1DB5001D5184 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A08C201C3D1DB5001D5184 /* ConnectionManager.m */; };
+		86A08C271C3D1E16001D5184 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A08C261C3D1E16001D5184 /* MBProgressHUD.m */; };
+		86A08C2A1C3D233F001D5184 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A08C291C3D233F001D5184 /* Utility.m */; };
+		86A08C2D1C3D30D1001D5184 /* MagicRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A08C2C1C3D30D1001D5184 /* MagicRecipe.m */; };
+		86A08C301C3E421A001D5184 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A08C2F1C3E421A001D5184 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,19 @@
 		86A08C081C3D1823001D5184 /* Magic_RecipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Magic_RecipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A08C0D1C3D1823001D5184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86A08C0E1C3D1823001D5184 /* Magic_RecipeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Magic_RecipeTests.m; sourceTree = "<group>"; };
+		86A08C1A1C3D1D8E001D5184 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		86A08C1D1C3D1DB5001D5184 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		86A08C1E1C3D1DB5001D5184 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		86A08C1F1C3D1DB5001D5184 /* ConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
+		86A08C201C3D1DB5001D5184 /* ConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
+		86A08C251C3D1E16001D5184 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		86A08C261C3D1E16001D5184 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		86A08C281C3D233F001D5184 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		86A08C291C3D233F001D5184 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		86A08C2B1C3D30D1001D5184 /* MagicRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicRecipe.h; sourceTree = "<group>"; };
+		86A08C2C1C3D30D1001D5184 /* MagicRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicRecipe.m; sourceTree = "<group>"; };
+		86A08C2E1C3E421A001D5184 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		86A08C2F1C3E421A001D5184 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +100,15 @@
 		86A08BF11C3D1822001D5184 /* Magic_Recipe */ = {
 			isa = PBXGroup;
 			children = (
+				86A08C1A1C3D1D8E001D5184 /* Constants.h */,
 				86A08BF61C3D1823001D5184 /* AppDelegate.h */,
 				86A08BF71C3D1823001D5184 /* AppDelegate.m */,
-				86A08BF91C3D1823001D5184 /* ViewController.h */,
-				86A08BFA1C3D1823001D5184 /* ViewController.m */,
+				86A08C281C3D233F001D5184 /* Utility.h */,
+				86A08C291C3D233F001D5184 /* Utility.m */,
+				86A08C241C3D1E0C001D5184 /* MBProgressHUD */,
+				86A08C1B1C3D1DA2001D5184 /* Networking */,
+				86A08C181C3D1D47001D5184 /* Model */,
+				86A08C191C3D1D53001D5184 /* Controller */,
 				86A08BFC1C3D1823001D5184 /* Main.storyboard */,
 				86A08BFF1C3D1823001D5184 /* Images.xcassets */,
 				86A08C011C3D1823001D5184 /* LaunchScreen.xib */,
@@ -117,6 +141,46 @@
 				86A08C0D1C3D1823001D5184 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86A08C181C3D1D47001D5184 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86A08C2B1C3D30D1001D5184 /* MagicRecipe.h */,
+				86A08C2C1C3D30D1001D5184 /* MagicRecipe.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		86A08C191C3D1D53001D5184 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				86A08BF91C3D1823001D5184 /* ViewController.h */,
+				86A08BFA1C3D1823001D5184 /* ViewController.m */,
+				86A08C2E1C3E421A001D5184 /* DetailViewController.h */,
+				86A08C2F1C3E421A001D5184 /* DetailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		86A08C1B1C3D1DA2001D5184 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				86A08C1D1C3D1DB5001D5184 /* Reachability.h */,
+				86A08C1E1C3D1DB5001D5184 /* Reachability.m */,
+				86A08C1F1C3D1DB5001D5184 /* ConnectionManager.h */,
+				86A08C201C3D1DB5001D5184 /* ConnectionManager.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		86A08C241C3D1E0C001D5184 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				86A08C251C3D1E16001D5184 /* MBProgressHUD.h */,
+				86A08C261C3D1E16001D5184 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A08BFB1C3D1823001D5184 /* ViewController.m in Sources */,
+				86A08C2D1C3D30D1001D5184 /* MagicRecipe.m in Sources */,
+				86A08C301C3E421A001D5184 /* DetailViewController.m in Sources */,
+				86A08C271C3D1E16001D5184 /* MBProgressHUD.m in Sources */,
 				86A08BF81C3D1823001D5184 /* AppDelegate.m in Sources */,
+				86A08C231C3D1DB5001D5184 /* ConnectionManager.m in Sources */,
+				86A08C2A1C3D233F001D5184 /* Utility.m in Sources */,
+				86A08C221C3D1DB5001D5184 /* Reachability.m in Sources */,
 				86A08BF51C3D1823001D5184 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +482,7 @@
 				86A08C141C3D1823001D5184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86A08C151C3D1823001D5184 /* Build configuration list for PBXNativeTarget "Magic_RecipeTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +491,7 @@
 				86A08C171C3D1823001D5184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

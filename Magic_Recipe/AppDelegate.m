@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Reachability.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +18,64 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    
+    [AppDelegate isServerReachable];
+    
     return YES;
 }
+
++ (BOOL)isServerReachable {
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reachabilityChanged:)
+                                                 name:kReachabilityChangedNotification
+                                               object:nil];
+    
+    Reachability * reach = [Reachability reachabilityWithHostname:@"https://www.google.com"];
+    
+    reach.reachableOnWWAN = YES;
+    
+    [reach startNotifier];
+
+//    return YES;
+    if([reach isReachable])
+        return YES;
+    else
+        return NO;
+}
+
++ (void)reachabilityChanged:(NSNotification*)note
+{
+    Reachability * reach = [note object];
+    
+    if([reach isReachable])
+    {
+        //NSLog(@"%c", [reach isReachable]);
+    }
+    else
+    {
+        //NSLog(@"%c", [reach isReachable]);
+    }
+}
+
+//+(BOOL)checkIfInternetIsAvailable
+//{
+//    BOOL reachable = NO;
+//    NetworkStatus netStatus = [APP_DELEGATE1.internetReachability currentReachabilityStatus];
+//    if(netStatus == ReachableViaWWAN || netStatus == ReachableViaWiFi)
+//    {
+//        reachable = YES;
+//    }
+//    else
+//    {
+//        reachable = NO;
+//    }
+//    return reachable;
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
