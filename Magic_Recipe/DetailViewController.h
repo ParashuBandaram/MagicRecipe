@@ -2,7 +2,7 @@
 //  DetailViewController.h
 //  Magic_Recipe
 //
-//  Created by Manish Patil on 07/01/16.
+//  Created by Parshuram Bandaram on 07/01/16.
 //  Copyright (c) 2016 Magic Recipe. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  Magic_RecipeTests.m
 //  Magic_RecipeTests
 //
-//  Created by Manish Patil on 06/01/16.
+//  Created by Parshuram Bandaram on 06/01/16.
 //  Copyright (c) 2016 Magic Recipe. All rights reserved.
 //
 
