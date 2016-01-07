@@ -158,14 +158,14 @@
 
 //-------------------- server unable to process alert -----------------------------//
 + (void) showAlertWithServerUnableToProcess:(UIViewController *)viewController {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"SERVER UNABLE PROCESS MESSAGE" delegate:viewController cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Server unable to process your request" delegate:viewController cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
     alert.tag = 111;
     [alert show];
 }
 
 //-------------------- check internet connection alert -----------------------------//
 + (void) showAlertWithCheckInternetConnection:(UIViewController *)viewController {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"CHECK INTERNET CONNECTION MESSAGE" delegate:viewController cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Please check internet connection" delegate:viewController cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
     alert.tag = 111;
     [alert show];
 }
